@@ -5,20 +5,12 @@ import { SERVER_URL } from "@env"
 interface RouteSettings {
   api: string;
   cdn: string;
-  invite: string;
-  template: string;
-  gift: string;
-  scheduledEvent: string;
   gateway: string;
 }
 
 export const DefaultRouteSettings: RouteSettings = {
   api: `https://${SERVER_URL}/backend/api`,
   cdn: `https://${SERVER_URL}/backend`,
-  invite: `https://${SERVER_URL}/invite`,
-  template: `https://${SERVER_URL}/template`,
-  gift: `https://${SERVER_URL}/gift`,
-  scheduledEvent: `https://${SERVER_URL}/events`,
   gateway: `wss://${SERVER_URL}/backend`,
 };
 
